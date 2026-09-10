@@ -44,10 +44,10 @@
         </div>
       </div>
     </div>
-    <a class="btn-agenda" href="#agenda">
+    <button type="button" class="btn-agenda" id="agenda-open-btn">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
       <span class="agenda-label">View Agenda</span>
-    </a>
+    </button>
   </div>
 </header>
 
@@ -194,7 +194,7 @@
   </section>
 
   <!-- Startups -->
-  <section class="startups-section" aria-labelledby="startups-heading">
+  <section class="startups-section" id="startups" aria-labelledby="startups-heading">
     <div class="container">
       <p class="kicker">Innovation &amp; Entrepreneurship</p>
       <h2 id="startups-heading" class="section-title">Startups &amp; Innovation Showcase</h2>
@@ -264,6 +264,71 @@
     <p class="footer-org">Organised by Training and Placement Cell &amp; Student Career Progression (SCP) Team, IIIT Allahabad.</p>
   </div>
 </footer>
+
+<!-- Agenda Modal -->
+<div class="agenda-overlay" id="agenda-overlay" hidden>
+  <div class="agenda-modal" role="dialog" aria-modal="true" aria-labelledby="agenda-title" id="agenda-modal">
+    <header class="agenda-head">
+      <p class="agenda-eyebrow">&#9733; Academic &amp; Industry Conclave &#9733;</p>
+      <h2 class="agenda-title" id="agenda-title">AGENDA</h2>
+      <p class="agenda-subtitle">Career &amp; Industry Connect 2026 &bull; IIIT Allahabad</p>
+      <button type="button" class="agenda-close" id="agenda-close-x" aria-label="Close agenda">&times;</button>
+    </header>
+    <div class="agenda-tabs" role="tablist" aria-label="Agenda day">
+      <button type="button" class="agenda-tab" id="tab-day1" role="tab" data-day="day1" aria-selected="true" aria-controls="panel-day1" tabindex="0">
+        <span class="tab-label-full">Day 1: Saturday, 19 Sept 2026</span>
+        <span class="tab-label-short">Day 1 &middot; Sat 19 Sept</span>
+      </button>
+      <button type="button" class="agenda-tab" id="tab-day2" role="tab" data-day="day2" aria-selected="false" aria-controls="panel-day2" tabindex="-1">
+        <span class="tab-label-full">Day 2: Sunday, 20 Sept 2026</span>
+        <span class="tab-label-short">Day 2 &middot; Sun 20 Sept</span>
+      </button>
+    </div>
+    <div class="agenda-body" id="agenda-body">
+      <div class="agenda-panel" id="panel-day1" role="tabpanel" aria-labelledby="tab-day1">
+        <p class="agenda-print-heading">Day 1: Saturday, 19 September 2026</p>
+        <div class="agenda-frame">
+          <div class="agenda-frame-inner">
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-tr" aria-hidden="true"></span>
+            <span class="corner corner-bl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+            <table class="agenda-table">
+              <thead>
+                <tr><th class="time-col" scope="col">Time</th><th scope="col">Program / Session Details</th></tr>
+              </thead>
+              <tbody id="agenda-day1-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="agenda-panel" id="panel-day2" role="tabpanel" aria-labelledby="tab-day2" hidden>
+        <p class="agenda-print-heading">Day 2: Sunday, 20 September 2026</p>
+        <div class="agenda-frame">
+          <div class="agenda-frame-inner">
+            <span class="corner corner-tl" aria-hidden="true"></span>
+            <span class="corner corner-tr" aria-hidden="true"></span>
+            <span class="corner corner-bl" aria-hidden="true"></span>
+            <span class="corner corner-br" aria-hidden="true"></span>
+            <table class="agenda-table">
+              <thead>
+                <tr><th class="time-col" scope="col">Time</th><th scope="col">Program / Session Details</th></tr>
+              </thead>
+              <tbody id="agenda-day2-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="agenda-foot">
+      <p class="agenda-note">* Official conclave schedule, Subject to minor institutional revisions</p>
+      <div class="agenda-foot-actions">
+        <button type="button" class="agenda-btn-print" id="agenda-print-btn">Print</button>
+        <button type="button" class="agenda-btn-close" id="agenda-close-footer">Close</button>
+      </div>
+    </footer>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
