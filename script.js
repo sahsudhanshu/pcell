@@ -1,87 +1,81 @@
-// Agenda data — edit here to update the Agenda modal.
-const AGENDA = {
-  day1: [
-    { time: "10:00 – 10:10 AM", title: "Inauguration Ceremony", type: "plain" },
-    { time: "10:10 – 10:15 AM", title: "Annual Placement Report by Student Career Progression (SCP) Team", type: "plain" },
-    { time: "10:15 – 10:30 AM", title: "Director's Welcome Address", type: "highlight" },
-    { time: "10:30 – 11:30 AM", title: "Keynote Talk 1", sub: "Mr. Prasanta Sarkar, General Manager, Electrical Vehicles, Tata Motors", type: "keynote", speakerId: "speaker-prasanta-sarkar" },
-    { time: "11:30 – 11:45 AM", title: "High Tea & Refreshments", type: "break" },
-    { time: "11:45 AM – 12:45 PM", title: "Keynote Talk 2", sub: "Mr. Pallab Gupta, Telecom & Standardization Lead, Nokia", type: "keynote", speakerId: "speaker-pallab-gupta" },
-    { time: "12:45 – 01:00 PM", title: "Official Conclave Group Photograph Session", type: "plain" },
-    { time: "01:00 – 03:00 PM", title: "Luncheon & Academic-Industry Networking Reception", type: "meal" },
-    { time: "03:00 – 03:45 PM", title: "Expert Session 1", sub: "Dr. Syed Rizvi, Staff Engineer, Analog Devices Inc.", type: "session", speakerId: "speaker-syed-rizvi" },
-    { time: "03:45 – 04:30 PM", title: "Expert Session 2", sub: "Mr. Uday Tej & Mr. Charan Tej Seeram, Novel Patent Services Ltd.", type: "session", speakerId: "speaker-uday-tej" },
-    { time: "04:30 – 05:00 PM", title: "Panel Discussion 1", type: "highlight" },
-    { time: "05:45 – 06:00 PM", title: "High Tea & Refreshments", type: "break" },
-    { time: "06:00 – 06:15 PM", title: "Group Photograph Session (Final Year Interns)", type: "plain" },
-    { time: "10:00 AM – 05:45 PM", title: "Innovation Exhibition", sub: "Patents, Prototypes, Startup Ideas from IIITA Students, Exhibitions from Industry", type: "parallel", tag: "All Day", link: "#startups" }
-  ],
-  day2: [
-    { time: "10:00 – 10:45 AM", title: "Expert Session 3", sub: "Dr. Manjeer Majumder, Research Engineer, Nokia, Bangalore", type: "session", speakerId: "speaker-manjeer-majumder" },
-    { time: "10:45 – 11:30 AM", title: "Expert Session 4", sub: "Dr. Rajat Channappanavar, Senior Power Architect, AmberSemi", type: "session", speakerId: "speaker-rajat-channappanavar" },
-    { time: "11:30 – 11:45 AM", title: "High Tea & Refreshments", type: "break" },
-    { time: "11:45 AM – 12:30 PM", title: "Expert Session 5", sub: "Speaker to be announced", type: "session" },
-    { time: "12:30 – 01:00 PM", title: "Panel Discussion 2", type: "highlight" },
-    { time: "01:00 – 03:00 PM", title: "Luncheon & Academic-Industry Networking Reception", type: "meal" },
-    { time: "03:00 – 05:00 PM", title: "Internship Tech Talks", sub: "Final Year Interns", type: "parallel", tag: "Concurrent" },
-    { time: "03:00 – 05:00 PM", title: "Industry Exhibitions", sub: "Posters from Industries, Demonstration of Prototypes", type: "parallel", tag: "Concurrent" },
-    { time: "05:00 – 05:30 PM", title: "Closing Ceremony", type: "highlight" },
-    { time: "05:30 – 05:45 PM", title: "High Tea & Refreshments", type: "break" }
-  ]
-};
+// ═══════════════════════════════════════════════════════════
+// Career & Industry Connect 2026 — IIIT Allahabad
+// Interactive Logic
+// ═══════════════════════════════════════════════════════════
 
-// Speaker data — edit here to update the Speakers section.
+// ── Speaker Data (complete with bios from official biographies document) ──
 const SPEAKERS = [
   {
     name: "Mr. Prasanta Sarkar",
     role: "General Manager, Electrical Vehicles",
     company: "Tata Motors",
-    bio: "Brings over 33 years of engineering experience spanning material handling systems, automotive body electronics, engine management systems, and electric vehicle technologies. He holds a B.Tech in Mechanical Engineering from IIT Kharagpur (1993) and an MS in Software Systems from BITS Pilani (2001), specializing in Systems Engineering. His career includes stints at Essar Steel, Delphi, and Robert Bosch, before joining Tata Motors in 2005, where he pioneered indigenous Engine Management Systems and has since driven innovations in hybrid powertrains, EV failure-root-cause analytics, and federated learning-based automation for EV service. He currently heads Federated Learning at Tata Motors' Engineering Research Center, with active interests in battery/motor digital twins, range estimation, and Gen 3 embedded software development tools."
+    initials: "PS",
+    gradient: 1,
+    image: "https://media.licdn.com/dms/image/v2/D5603AQFbso--Uu_J_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1690970841646?e=1790812800&v=beta&t=nDkhXoN9a2Fobt6N5njICwpjucpj5JTnvlgC3uMPuE4",
+    bio: "Mr. Prasanta Sarkar brings over 33 years of engineering experience spanning material handling systems, automotive body electronics, engine management systems, and electric vehicle technologies. He holds a B.Tech in Mechanical Engineering from IIT Kharagpur (1993) and an MS in Software Systems from BITS Pilani (2001), specializing in Systems Engineering. His career includes stints at Essar Steel, Delphi, and Robert Bosch, before joining Tata Motors in 2005, where he pioneered indigenous Engine Management Systems. He currently heads Federated Learning at Tata Motors' Engineering Research Center, with active interests in battery/motor digital twins, range estimation, and Gen 3 embedded software development tools."
   },
   {
     name: "Mr. Pallab Gupta",
     role: "Telecom & Standardization Lead",
     company: "Nokia",
-    bio: "A technology and standardization leader with more than 22 years of experience in the Telecommunication industry across research, technology strategy, and global standards. As a Principal Standardization Lead at Nokia, he shapes strategic technology positions and contributes to standards development across 3GPP, GSMA and TSDSI, working with operators, vendors, academia and regulatory stakeholders. He is recognized for driving consensus among companies with diverse interests and translating industry priorities into globally adopted telecommunications standards, and currently serves as Rapporteur for a 3GPP SA2 study on IMS architecture enhancements. His areas of expertise include 5G and 6G System Architecture, AI-native networks, IMS, Private Networks, Sensing, and Non-Terrestrial Networks (NTN)/UAV/UAS. He is an IEEE Senior Member with more than 200 patent applications worldwide."
+    initials: "PG",
+    gradient: 2,
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEnY8aq8y-Haw/profile-displayphoto-scale_400_400/B56ZroBRfeLYAo-/0/1764829241947?e=1790812800&v=beta&t=y9r2TogZ3jE32XW1fUKsAOVtFT15AtyvLFVWmVZ0TaQ",
+    bio: "Mr. Pallab Gupta is working at Nokia and has deep expertise in Telecom Standardization. He is actively involved in shaping industry standards for next-generation wireless communication systems and has been instrumental in driving Nokia's standardization initiatives across multiple technology generations."
   },
   {
     name: "Dr. Syed Rizvi",
     role: "Staff Engineer",
     company: "Analog Devices Inc.",
-    bio: "Specializes in semiconductor device modeling, advanced characterization methodologies, and formulation of device reliability framework. His current and previous works sit at the intersection of device physics and technology development, focusing on translating experimental characterization into predictive models for in-house fabrication processes. He holds a dual-degree, MTech &ndash; PhD, in Microelectronics and VLSI (Electrical Engineering) from IIT Kanpur."
+    initials: "SR",
+    gradient: 3,
+    image: "https://media.licdn.com/dms/image/v2/C5603AQEnLroRMbvioA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517248449811?e=1790812800&v=beta&t=iSSk0FggEa099Nkj_OigfEkTSZeCQ5WV8QRJfs8D5Ew",
+    bio: "Dr. Syed Rizvi specializes in semiconductor device modeling, advanced characterization methodologies, and formulation of device reliability framework. His current and previous works sit at the intersection of device physics and technology development, focusing on translating experimental characterization into predictive models for in-house fabrication processes. Syed Rizvi holds a dual-degree, MTech–PhD, in Microelectronics and VLSI (Electrical Engineering) from IIT Kanpur."
   },
   {
     name: "Mr. Uday Tej",
     role: "Head of Projects Division",
     company: "Novel Patent Services Ltd.",
-    bio: "Heads the Projects Division at Novel Patent Services Ltd., overseeing execution of all patent analytics projects for corporate clients. He has expertise in patentability searches and clearance searches, and is responsible for patent deliverables to the clients."
+    initials: "UT",
+    gradient: 4,
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQHcciWni5LqdQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1713778191882?e=1790812800&v=beta&t=kGCSj_K7KQPgIlzFCFI5hJudVreFgUv9hXS3z7bicJg",
+    bio: "Mr. Uday Tej heads the Projects Division at Novel Patent Services Ltd. He oversees the execution of all patent analytics projects for corporate clients and has expertise in patentability searches, clearance searches, and is responsible for patent deliverables to the clients."
   },
   {
     name: "Mr. Charan Tej Seeram",
     role: "Manager, Technical Division",
     company: "Novel Patent Services Ltd.",
-    bio: "Manager at Novel Patent Services Ltd., managing the technical division. He has expertise in IP search and analysis spanning patentability, invalidation, and Freedom to Operate studies to landscape analysis, and drives technology transfer and patent circumvention strategy."
+    initials: "CT",
+    gradient: 5,
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGOxyt30ttmvg/profile-displayphoto-scale_200_200/B56Z_0XFFsIsAc-/0/1786511122365?e=1790812800&v=beta&t=7_z5GdkwAjxs5Obvs_DxWwC8oFW1KPjhJJy-aM-rUO8",
+    bio: "Mr. Charan Tej Seeram is Manager at Novel Patent Services Ltd. and manages the technical division. He has expertise in IP search and analysis from patentability, invalidation and Freedom to Operate Studies to landscape. He drives technology transfer and patent circumvention strategy."
   },
   {
     name: "Dr. Manjeer Majumder",
     role: "Research Engineer",
     company: "Nokia, Bangalore",
-    bio: "Holds an M.Tech&ndash;Ph.D. dual degree in Electrical Engineering from IIT Kanpur, where doctoral research focused on channel estimation and pilot design for single- and multi-carrier wireless communication systems, including MIMO and mmWave MIMO-OFDM. At Nokia, he works on 5G NR features with a focus on beamforming and scheduling, while also developing expertise in AI/ML applications for wireless communications."
+    initials: "MM",
+    gradient: 6,
+    image: "https://media.licdn.com/dms/image/v2/C4D03AQHhdsWWl7sNow/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1624377195191?e=1790812800&v=beta&t=EJJfgXLzapXMKHfhsIflpblTDKrhH5C6PFKLG39C7BU",
+    bio: "Dr. Manjeer Majumder holds an M.Tech–Ph.D. dual degree in Electrical Engineering from IIT Kanpur, where the doctoral research focused on channel estimation and pilot design for single- and multi-carrier wireless communication systems, including MIMO and mmWave MIMO-OFDM. At Nokia, Manjeer works on 5G NR features with a focus on beamforming and scheduling, while also developing expertise in AI/ML applications for wireless communications."
   },
   {
     name: "Dr. Rajat Channappanavar",
     role: "Senior Power Architect",
     company: "AmberSemi",
-    bio: "Completed his Ph.D. from IIT Kanpur, where he worked on power electronics for data center applications. He is presently working on vertical power architecture for AI data centers at AmberSemi."
+    initials: "RC",
+    gradient: 7,
+    image: "https://media.licdn.com/dms/image/v2/D5603AQHilUM_v6Jwxw/profile-displayphoto-scale_200_200/B56ZuSzIcgIcAY-/0/1767694436876?e=1790812800&v=beta&t=ZM80-LyvQTE0-Qt4pan9I3IP8pITH6d0wlR5GJJu43Q",
+    bio: "Dr. Rajat Channappanavar completed his Ph.D. from IIT Kanpur specializing in power electronics for data center applications. He is currently working on vertical power architectures and high-density power delivery topologies for hyperscale AI data centers at AmberSemi."
   }
 ];
 
-// Verify all names and emails against the source list before publishing.
+// ── Exhibitor Data ──
 const EXHIBITORS_FLOOR1 = [
   { name: "Rivika Organic Food Pvt Ltd.", rep: "Saddam Husain", badge: "incubated", email: "saddamhusain1994@gmail.com" },
   { name: "NCode Sutram for Artificial Intelligence Pvt Ltd", rep: "Mr Ashutosh Mishra", badge: "incubated", email: "ncodesutram@gmail.com" },
   { name: "DEBUGGERS SQUAD INNOVATIONS", rep: "Aditya Kumar Singh", badge: "applied", email: "iitianadityakumarsingh@gmail.com" },
-  { name: "Kim Up", rep: "Ranjeet Maurya", badge: "incubated", email: "ranjeet@kimup.in" },
+  { name: "KimUp", rep: "Ranjeet Maurya", badge: "incubated", email: "ranjeet@kimup.in" },
   { name: "CURELEX HEALTHTECH PRIVATE LIMITED", rep: "Shriyansh Singh", badge: "incubated", email: "contact.curelex@gmail.com" },
   { name: "Lyfshilp Academy Pvt. Ltd.", rep: "Bhawna Khorwal", repNote: "(Senior Manager)", badge: "incubated", email: "bhawna@lyfshilpacademy.com" },
   { name: "PulseOne", rep: "Mohd Salman Khan", badge: "incubated", email: "salman@pulseone.in" },
@@ -90,7 +84,7 @@ const EXHIBITORS_FLOOR1 = [
 ];
 
 const EXHIBITORS_GROUND = [
-  { name: "SYNCKYOU", rep: "SOUMILI GHOSH", badge: "student", email: "iit2025163@iiita.ac.in" },
+  { name: "SYNCXYOU", rep: "SOUMILI GHOSH", badge: "student", email: "iit2025163@iiita.ac.in" },
   { name: "With Me", rep: "Subham Thakare", badge: "student", email: "mbe2026001@iiita.ac.in" },
   { name: "SPIREXA", rep: "Utkarsh Kumar", badge: "student", email: "bdi2026007@iiita.ac.in" },
   { name: "Aegis ID", rep: "Abdul Azeem Ansari", badge: "student", email: "iit2024243@iiita.ac.in" },
@@ -105,68 +99,69 @@ const BADGE_LABELS = {
   student: "Student of IIITA"
 };
 
+// ── Utility ──
 function pad2(n) {
   return String(n).padStart(2, "0");
 }
 
-function slugifyName(name) {
-  return name
-    .replace(/^(Mr\.|Mrs\.|Ms\.|Dr\.)\s*/i, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-");
-}
-
+// ── Render Speakers ──
 function renderSpeakers() {
   const grid = document.getElementById("speaker-grid");
-  const userIcon = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>';
-  const chevron = '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="m9 18 6-6-6-6"/></svg>';
+  const chevron = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>';
 
   SPEAKERS.forEach((sp, i) => {
-    const bio = sp.bio || "Bio coming soon.";
-    const tooltipId = `speaker-tooltip-${i}`;
     const card = document.createElement("div");
-    card.className = "speaker-card";
-    card.id = `speaker-${slugifyName(sp.name)}`;
+    card.className = `speaker-card reveal reveal-delay-${(i % 4) + 1}`;
     card.tabIndex = 0;
-    card.setAttribute("aria-describedby", tooltipId);
+    const avatarClass = sp.image ? "avatar" : `avatar avatar-gradient-${sp.gradient}`;
+    const avatarContent = sp.image ? `<img src="${sp.image}" alt="${sp.name}" class="avatar-img">` : sp.initials;
+
     card.innerHTML = `
-      <div class="avatar">${userIcon}<span class="avatar-label">[Photo: 180x180px]</span></div>
+      <div class="${avatarClass}">${avatarContent}</div>
       <p class="speaker-name">${sp.name}</p>
       <p class="speaker-role">${sp.role}</p>
       <p class="speaker-company">${sp.company}</p>
       <div class="speaker-divider"></div>
       <span class="speaker-link">View Full Profile ${chevron}</span>
-      <div class="tooltip" id="${tooltipId}" role="tooltip">
-        <p class="tooltip-name">${sp.name}</p>
-        <p class="tooltip-company">${sp.company}</p>
-        <div class="tooltip-divider"></div>
-        <p class="tooltip-bio">${bio}</p>
-      </div>
     `;
-    card.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const wasOpen = card.classList.contains("is-open");
-      document.querySelectorAll(".speaker-card.is-open").forEach((c) => c.classList.remove("is-open"));
-      if (!wasOpen) card.classList.add("is-open");
-    });
+    card.addEventListener("click", () => openBio(sp));
     card.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") card.classList.remove("is-open");
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openBio(sp);
+      }
     });
     grid.appendChild(card);
   });
-
-  document.addEventListener("click", () => {
-    document.querySelectorAll(".speaker-card.is-open").forEach((c) => c.classList.remove("is-open"));
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      document.querySelectorAll(".speaker-card.is-open").forEach((c) => c.classList.remove("is-open"));
-    }
-  });
 }
 
+// ── Bio Modal ──
+function openBio(sp) {
+  const panel = document.getElementById("speaker-bio-panel");
+  const avatarEl = document.getElementById("bio-avatar");
+  avatarEl.className = sp.image ? "bio-avatar" : `bio-avatar avatar-gradient-${sp.gradient}`;
+  avatarEl.innerHTML = sp.image ? `<img src="${sp.image}" alt="${sp.name}" class="avatar-img">` : sp.initials;
+  
+  document.getElementById("bio-name").textContent = sp.name;
+  document.getElementById("bio-role").textContent = sp.role;
+  document.getElementById("bio-company").textContent = sp.company;
+  document.getElementById("bio-text").textContent = sp.bio || "Bio coming soon.";
+  panel.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeBio() {
+  document.getElementById("speaker-bio-panel").classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+document.getElementById("bio-close").addEventListener("click", closeBio);
+document.getElementById("bio-backdrop").addEventListener("click", closeBio);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeBio();
+});
+
+// ── Render Tables ──
 function renderTable(tbodyId, data) {
   const tbody = document.getElementById(tbodyId);
   data.forEach((row, i) => {
@@ -176,7 +171,7 @@ function renderTable(tbodyId, data) {
       : row.rep;
     tr.innerHTML = `
       <td class="cell-num">${pad2(i + 1)}</td>
-      <td>${row.name}</td>
+      <td><strong>${row.name}</strong></td>
       <td>${repHtml}</td>
       <td><span class="badge badge-${row.badge}">${BADGE_LABELS[row.badge]}</span></td>
       <td class="cell-email"><a href="mailto:${row.email}">${row.email}</a></td>
@@ -192,185 +187,143 @@ function renderExhibitors() {
   document.getElementById("count-b").textContent = `${EXHIBITORS_GROUND.length} Exhibitors`;
 }
 
-function renderAgendaRow(item) {
-  const hasSpeaker = item.speakerId && document.getElementById(item.speakerId);
-  let titleHtml = item.type === "parallel" && item.tag
-    ? `<span class="parallel-pill">${item.tag}</span>${item.title}`
-    : item.title;
-  const titleTag = item.link ? "button" : "p";
-  const titleAttrs = item.link ? ` type="button" data-scroll-target="${item.link}"` : "";
-  let cellHtml = `<${titleTag} class="row-title"${titleAttrs}>${titleHtml}</${titleTag}>`;
+// ── Countdown Timer ──
+function updateCountdown() {
+  // Event: Sept 19, 2026 09:00 IST (UTC+5:30)
+  const target = new Date("2026-09-19T09:00:00+05:30").getTime();
+  const now = Date.now();
+  const diff = target - now;
 
-  if (item.sub) {
-    cellHtml += hasSpeaker
-      ? `<button type="button" class="row-sub speaker-jump-link" data-speaker-id="${item.speakerId}">${item.sub}</button>`
-      : `<p class="row-sub">${item.sub}</p>`;
+  if (diff <= 0) {
+    document.getElementById("cd-days").textContent = "00";
+    document.getElementById("cd-hours").textContent = "00";
+    document.getElementById("cd-mins").textContent = "00";
+    document.getElementById("cd-secs").textContent = "00";
+    return;
   }
 
-  return `<tr class="row-${item.type}">
-    <td class="time-cell">${item.time}</td>
-    <td class="detail-cell">${cellHtml}</td>
-  </tr>`;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("cd-days").textContent = pad2(days);
+  document.getElementById("cd-hours").textContent = pad2(hours);
+  document.getElementById("cd-mins").textContent = pad2(mins);
+  document.getElementById("cd-secs").textContent = pad2(secs);
 }
 
-function renderAgendaTables() {
-  document.getElementById("agenda-day1-body").innerHTML = AGENDA.day1.map(renderAgendaRow).join("");
-  document.getElementById("agenda-day2-body").innerHTML = AGENDA.day2.map(renderAgendaRow).join("");
+// ── Scroll Reveal (Intersection Observer) ──
+function initScrollReveal() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 }
 
-function initAgenda() {
-  renderAgendaTables();
+// ── Sticky Header Shadow ──
+function initHeaderScroll() {
+  const header = document.getElementById("site-header");
+  const onScroll = () => {
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
 
-  const overlay = document.getElementById("agenda-overlay");
-  const modal = document.getElementById("agenda-modal");
-  const openBtn = document.getElementById("agenda-open-btn");
-  const closeX = document.getElementById("agenda-close-x");
-  const closeFooterBtn = document.getElementById("agenda-close-footer");
-  const printBtn = document.getElementById("agenda-print-btn");
-  const tablist = document.querySelector(".agenda-tabs");
-  const tabs = Array.from(document.querySelectorAll(".agenda-tab"));
-  const panels = { day1: document.getElementById("panel-day1"), day2: document.getElementById("panel-day2") };
-  const body = document.getElementById("agenda-body");
-
-  let activeDay = "day1";
-  const today = new Date();
-  if (today.getFullYear() === 2026 && today.getMonth() === 8 && today.getDate() === 20) {
-    activeDay = "day2";
-  }
-  let lastFocused = null;
-  let restoredPaddingRight = "";
-
-  function setActiveTab(day, opts) {
-    activeDay = day;
-    tabs.forEach((tab) => {
-      const isActive = tab.dataset.day === day;
-      tab.setAttribute("aria-selected", String(isActive));
-      tab.tabIndex = isActive ? 0 : -1;
-      if (isActive && opts && opts.focusTab) tab.focus();
-    });
-    panels.day1.hidden = day !== "day1";
-    panels.day2.hidden = day !== "day2";
-    body.scrollTop = 0;
-  }
-
-  tabs.forEach((tab) => tab.addEventListener("click", () => setActiveTab(tab.dataset.day)));
-
-  tablist.addEventListener("keydown", (e) => {
-    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-    e.preventDefault();
-    const i = tabs.findIndex((t) => t.dataset.day === activeDay);
-    const next = e.key === "ArrowRight" ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
-    setActiveTab(tabs[next].dataset.day, { focusTab: true });
+// ── Mobile Menu ──
+function initMobileMenu() {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav-links");
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
   });
+  // Close on nav link click
+  nav.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => nav.classList.remove("open"));
+  });
+}
 
-  function getFocusable() {
-    return Array.from(modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
-      .filter((el) => el.offsetParent !== null);
-  }
-
-  function handleKeydown(e) {
-    if (e.key === "Escape") {
-      closeAgenda();
-      return;
-    }
-    if (e.key !== "Tab") return;
-    const focusable = getFocusable();
-    if (!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault();
-      last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault();
-      first.focus();
-    }
-  }
-
-  function handleOverlayClick(e) {
-    if (e.target === overlay) closeAgenda();
-  }
-
-  function lockScroll() {
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    restoredPaddingRight = document.body.style.paddingRight;
-    document.body.style.overflow = "hidden";
-    if (scrollbarWidth > 0) document.body.style.paddingRight = `${scrollbarWidth}px`;
-  }
-
-  function unlockScroll() {
-    document.body.style.overflow = "";
-    document.body.style.paddingRight = restoredPaddingRight;
-  }
-
-  function openAgenda() {
-    if (!overlay.hidden) return;
-    lastFocused = document.activeElement;
-    setActiveTab(activeDay);
-    overlay.hidden = false;
-    document.body.classList.add("agenda-open");
-    lockScroll();
-    requestAnimationFrame(() => overlay.classList.add("is-open"));
-    document.addEventListener("keydown", handleKeydown);
-    overlay.addEventListener("click", handleOverlayClick);
-    const activeTab = tabs.find((t) => t.dataset.day === activeDay);
-    if (activeTab) activeTab.focus();
-    if (location.hash !== "#agenda") history.replaceState(null, "", "#agenda");
-  }
-
-  function closeAgenda(focusEl) {
-    if (overlay.hidden) return;
-    overlay.classList.remove("is-open");
-    document.body.classList.remove("agenda-open");
-    unlockScroll();
-    document.removeEventListener("keydown", handleKeydown);
-    overlay.removeEventListener("click", handleOverlayClick);
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const finish = () => { overlay.hidden = true; };
-    if (reduced) finish();
-    else setTimeout(finish, 180);
-    if (location.hash === "#agenda") {
-      history.replaceState(null, "", location.pathname + location.search);
-    }
-    const target = focusEl || lastFocused || openBtn;
-    if (target && typeof target.focus === "function") target.focus({ preventScroll: true });
-  }
-
-  openBtn.addEventListener("click", openAgenda);
-  closeX.addEventListener("click", () => closeAgenda());
-  closeFooterBtn.addEventListener("click", () => closeAgenda());
-  printBtn.addEventListener("click", () => window.print());
-
-  body.addEventListener("click", (e) => {
-    const speakerBtn = e.target.closest(".speaker-jump-link");
-    if (speakerBtn) {
-      const card = document.getElementById(speakerBtn.dataset.speakerId);
-      closeAgenda(card);
-      if (card) {
-        setTimeout(() => {
-          card.scrollIntoView({ behavior: "smooth", block: "center" });
-          card.classList.add("flash-highlight");
-          setTimeout(() => card.classList.remove("flash-highlight"), 1200);
-        }, 200);
+// ── Smooth Scroll for anchor links ──
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const target = document.querySelector(a.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        const headerHeight = document.getElementById("site-header").offsetHeight;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
+        window.scrollTo({ top, behavior: "smooth" });
       }
-      return;
-    }
-    const scrollBtn = e.target.closest("[data-scroll-target]");
-    if (scrollBtn) {
-      const target = document.querySelector(scrollBtn.dataset.scrollTarget);
-      closeAgenda();
-      if (target) setTimeout(() => target.scrollIntoView({ behavior: "smooth", block: "start" }), 200);
-    }
+    });
   });
-
-  window.addEventListener("hashchange", () => {
-    if (location.hash === "#agenda" && overlay.hidden) openAgenda();
-    else if (location.hash !== "#agenda" && !overlay.hidden) closeAgenda();
-  });
-
-  if (location.hash === "#agenda") openAgenda();
 }
 
-renderSpeakers();
-renderExhibitors();
-initAgenda();
+// ── Back to Top ──
+function initBackToTop() {
+  const btn = document.getElementById("back-to-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 600) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  }, { passive: true });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// ── Agenda Tabs ──
+function initAgendaTabs() {
+  const tabs = document.querySelectorAll(".agenda-tab");
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const day = tab.dataset.day;
+      tabs.forEach((t) => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+
+      document.querySelectorAll(".agenda-content").forEach((c) => c.classList.remove("active"));
+      document.getElementById(`agenda-day-${day}`).classList.add("active");
+    });
+  });
+}
+
+// ── Init Everything ──
+function init() {
+  renderSpeakers();
+  renderExhibitors();
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  initScrollReveal();
+  initHeaderScroll();
+  initMobileMenu();
+  initSmoothScroll();
+  initBackToTop();
+  initAgendaTabs();
+}
+
+// Run when DOM is ready
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
+}

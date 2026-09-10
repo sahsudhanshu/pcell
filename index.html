@@ -1,74 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career &amp; Industry Connect 2026 | IIIT Allahabad</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career &amp; Industry Connect 2026 | IIIT Allahabad</title>
+  <meta name="description"
+    content="Career &amp; Industry Connect 2026 - IIIT Allahabad's Annual Flagship Industry-Academia Summit. Bridging academia and industry for innovation and impact. Sept 19-20, 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Utility bar -->
-<div class="utility-bar">
-  <div class="utility-inner">
-    <div class="utility-left">
-      <span class="gold-semibold">IIITA Official Portal</span>
-      <span class="divider" aria-hidden="true"></span>
-      <span>Center for Career Planning &amp; Industry Relations</span>
-    </div>
-    <div class="utility-right">
-      <span>Devghat, Jhalwa, Prayagraj - 211015, UP, India</span>
-      <span class="divider" aria-hidden="true"></span>
-      <span class="gold-semibold">Event Date: Sept 19-20, 2026</span>
+  <!-- Utility bar -->
+  <div class="utility-bar">
+    <div class="utility-inner">
+      <div class="utility-left">
+        <a href="https://www.iiita.ac.in" target="_blank" rel="noopener" class="gold-semibold">IIITA Official Portal
+          ↗</a>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="hide-on-mobile">Center for Career Planning &amp; Industry Relations</span>
+      </div>
+      <div class="utility-right">
+        <span class="hide-on-mobile">Devghat, Jhalwa, Prayagraj - 211015, UP, India</span>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="gold-semibold">Sept 19-20, 2026</span>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="header-left">
-      <div class="logo-box" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></svg>
-        <span class="logo-text">IIITA LOGO</span>
-      </div>
-      <div class="header-titles">
-        <h1 class="inst-name">Indian Institute of Information Technology Allahabad</h1>
-        <div class="event-line">
-          <span class="dot gold-dot" aria-hidden="true"></span>
-          <span class="event-name">Career &amp; Industry Connect 2026</span>
-          <span class="event-sub">| Annual Flagship Industry-Academia Summit</span>
+  <!-- Header / Sticky Nav -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a href="https://www.iiita.ac.in" target="_blank" rel="noopener">
+          <img src="https://www.iiita.ac.in/sites/default/files/logo.png" alt="IIIT Allahabad Logo" class="logo-img"
+            onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 52 52%22%3E%3Crect width=%2252%22 height=%2252%22 rx=%228%22 fill=%22%230B2240%22/%3E%3Ctext x=%2226%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23D4A52A%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2214%22%3EIIITA%3C/text%3E%3C/svg%3E';">
+        </a>
+        <div class="header-titles">
+          <h1 class="inst-name">Indian Institute of Information Technology Allahabad</h1>
+          <div class="event-line">
+            <span class="event-name">Career &amp; Industry Connect 2026</span>
+            <span class="event-sub">| Flagship Industry-Academia Summit</span>
+          </div>
         </div>
       </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#pillars">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#startups">Startups</a>
+      </nav>
+      <a class="btn-primary" href="#agenda">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <path d="M16 2v4M8 2v4M3 10h18" />
+        </svg>
+        <span>View Agenda</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
     </div>
-    <button type="button" class="btn-agenda" id="agenda-open-btn">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-      <span class="agenda-label">View Agenda</span>
-    </button>
-  </div>
-</header>
+  </header>
 
-<main>
-  <!-- Hero -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="container hero-inner">
-      <p class="kicker hero-kicker">Indian Institute of Information Technology Allahabad Cordially Invites You To</p>
-      <h2 id="hero-heading" class="hero-title">CAREER &amp; INDUSTRY CONNECT<br>2026</h2>
-      <p class="hero-subtitle">Bridging Academia and Industry for Innovation and Impact</p>
-      <div class="hero-pill">CONNECT &bull; COLLABORATE &bull; INNOVATE</div>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="kicker hero-kicker">
+          <span style="text-align: center;">Indian Institute of Information Technology Allahabad<br>Cordially Invites You To</span>
+        </p>
+        <h2 id="hero-heading" class="hero-title">CAREER &amp; INDUSTRY<br><span class="gold-text">CONNECT 2026</span>
+        </h2>
+        <p class="hero-subtitle">Bridging Academia and Industry for Innovation and Impact</p>
+        <div class="hero-pill">
+          <span class="pill-dot" aria-hidden="true"></span>CONNECT
+          <span class="pill-dot" aria-hidden="true"></span>COLLABORATE
+          <span class="pill-dot" aria-hidden="true"></span>INNOVATE
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown" id="countdown">
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-days">--</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-hours">--</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-mins">--</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-value" id="cd-secs">--</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#agenda" class="btn-hero btn-hero-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            View Event Agenda
+          </a>
+          <a href="#speakers" class="btn-hero btn-hero-outline">
+            Meet the Speakers →
+          </a>
+          <a href="assets/brochure.pdf" download class="btn-hero btn-hero-outline" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" x2="12" y1="15" y2="3" />
+            </svg>
+            Download Brochure
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave: hero → info-strip -->
+    <div class="wave-divider" aria-hidden="true"
+      style="margin-top:-1px; background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 40%, var(--navy-700) 100%);">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,40 1440,40 L1440,80 L0,80 Z" fill="#ffffff" />
+      </svg>
     </div>
 
-    <!-- Info strip -->
-    <div class="container">
+    <!-- Info Strip -->
+    <div class="container info-strip-wrap reveal">
       <div class="info-strip">
         <div class="info-col">
           <div class="info-icon-tile">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
           </div>
-          <div class="info-text">
+          <div>
             <p class="info-label">Dates</p>
             <p class="info-value">19 &ndash; 20 September 2026</p>
             <p class="info-sub">Saturday &amp; Sunday</p>
@@ -76,19 +171,29 @@
         </div>
         <div class="info-col">
           <div class="info-icon-tile">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
           </div>
-          <div class="info-text">
+          <div>
             <p class="info-label">Venue</p>
             <p class="info-value">Main Auditorium</p>
-            <p class="info-sub">IIIT Allahabad Campus</p>
+            <p class="info-sub">IIIT Allahabad</p>
           </div>
         </div>
         <div class="info-col">
           <div class="info-icon-tile">
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
           </div>
-          <div class="info-text">
+          <div>
             <p class="info-label">Target Audience</p>
             <p class="info-value">UG, PG, &amp; PhD Students</p>
             <p class="info-sub">Industry Delegates &amp; Researchers</p>
@@ -96,240 +201,461 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Mission -->
-  <div class="container">
-    <div class="mission-box">
-      <p class="kicker mission-kicker">Mission &amp; Core Focus</p>
-      <p class="mission-text">&ldquo;A platform to bring together industry leaders, research scholars, and academicians to exchange ideas, explore collaborations, and co-create innovative solutions for a better tomorrow. Ideas. Innovation. Impact.&rdquo;</p>
-    </div>
-  </div>
-
-  <!-- Pillars -->
-  <div class="container">
-    <div class="pillars-grid">
-      <div class="pillar-card pillar-navy">
-        <div class="pillar-icon pillar-icon-navy" aria-hidden="true">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M20 7h-9a2 2 0 0 0-2 2v9"/><path d="M14 17H5a2 2 0 0 1-2-2V6"/><rect x="2" y="6" width="20" height="12" rx="2" transform="translate(0 0)"/><path d="M6 10h.01M10 10h.01"/></svg>
+    <!-- Mission -->
+    <section class="mission-section">
+      <div class="container">
+        <div class="mission-box reveal">
+          <p class="kicker mission-kicker">Mission &amp; Core Focus</p>
+          <p class="mission-text">&ldquo;A platform to bring together industry leaders, research scholars, and
+            academicians to exchange ideas, explore collaborations, and co-create innovative solutions for a better
+            tomorrow. Ideas. Innovation. Impact.&rdquo;</p>
         </div>
-        <h3 class="pillar-title">Internship to Full-Time Offer</h3>
-        <p class="pillar-text">Direct pathways connecting pre-final and final-year tech interns with top-tier product conglomerates and R&amp;D labs.</p>
       </div>
-      <div class="pillar-card pillar-gold">
-        <div class="pillar-icon pillar-icon-gold" aria-hidden="true">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.5.4.9 1 .9 1.6V17h6.2v-.7c0-.6.4-1.2.9-1.6A7 7 0 0 0 12 2Z"/></svg>
+    </section>
+
+    <!-- Wave: mission → pillars -->
+    <div class="wave-divider" aria-hidden="true" style="background: #fff;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:40px;">
+        <path d="M0,0 L0,30 Q360,60 720,30 T1440,30 L1440,0 Z" fill="#ffffff" />
+        <path d="M0,30 Q360,60 720,30 T1440,30 L1440,60 L0,60 Z" fill="#ffffff" />
+      </svg>
+    </div>
+
+    <!-- Pillars -->
+    <section class="pillars-section" id="pillars">
+      <div class="container">
+        <p class="kicker reveal">Core Pillars</p>
+        <h2 class="section-title reveal">Three Pathways to Impact</h2>
+        <div class="wavy-rule reveal"></div>
+        <div class="pillars-grid">
+          <div class="pillar-card pillar-navy reveal reveal-delay-1">
+            <div class="pillar-icon pillar-icon-navy" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3 class="pillar-title">Internship to Full-Time Offer</h3>
+            <p class="pillar-text">Direct pathways connecting pre-final and final-year tech interns with top-tier
+              product conglomerates and R&amp;D labs.</p>
+          </div>
+          <div class="pillar-card pillar-gold reveal reveal-delay-2">
+            <div class="pillar-icon pillar-icon-gold" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.5.4.9 1 .9 1.6V17h6.2v-.7c0-.6.4-1.2.9-1.6A7 7 0 0 0 12 2Z" />
+              </svg>
+            </div>
+            <h3 class="pillar-title">Ideas to Startups</h3>
+            <p class="pillar-text">Mentorship, institutional incubation, and seed funding support for student
+              entrepreneurs and innovative deep-tech ventures.</p>
+          </div>
+          <div class="pillar-card pillar-blue reveal reveal-delay-3">
+            <div class="pillar-icon pillar-icon-blue" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2Z" />
+                <path d="M14 2v6h6M9 13h6M9 17h6M9 9h1" />
+              </svg>
+            </div>
+            <h3 class="pillar-title">Patents to Technology Translation</h3>
+            <p class="pillar-text">Converting faculty and scholar research breakthroughs into commercially viable
+              intellectual properties and licensed technologies.</p>
+          </div>
         </div>
-        <h3 class="pillar-title">Ideas to Startups</h3>
-        <p class="pillar-text">Mentorship, institutional incubation, and seed funding support for student entrepreneurs and innovative deep-tech ventures.</p>
       </div>
-      <div class="pillar-card pillar-blue">
-        <div class="pillar-icon pillar-icon-blue" aria-hidden="true">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2Z"/><path d="M14 2v6h6M9 13h6M9 17h6M9 9h1"/></svg>
+    </section>
+
+    <!-- Wave: pillars → departments -->
+    <div class="wave-divider" aria-hidden="true" style="background: #fff;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:50px;">
+        <path d="M0,20 C240,50 480,0 720,30 C960,60 1200,10 1440,20 L1440,60 L0,60 Z" fill="var(--gray-50)" />
+      </svg>
+    </div>
+
+    <!-- Departments -->
+    <section class="departments-section" id="departments">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <p class="kicker">Participating Departments</p>
+            <h2 class="section-title">Academic Departments</h2>
+            <p class="section-subtitle">Interdisciplinary synergy shaping cutting-edge technology and management
+              excellence</p>
+          </div>
+          <span class="badge-outline">IIITA Academic Divisions</span>
         </div>
-        <h3 class="pillar-title">Patents to Technology Translation</h3>
-        <p class="pillar-text">Converting faculty and scholar research breakthroughs into commercially viable intellectual properties and licensed technologies.</p>
+        <div class="wavy-rule reveal"></div>
+        <div class="dept-grid">
+          <div class="dept-card reveal reveal-delay-1">
+            <p class="dept-kicker">Dept of IT</p>
+            <h3 class="dept-title">Information Technology</h3>
+            <p class="dept-text">Innovating tomorrow through intelligent systems and digital solutions.</p>
+          </div>
+          <div class="dept-card reveal reveal-delay-2">
+            <p class="dept-kicker">Dept of AS</p>
+            <h3 class="dept-title">Applied Sciences</h3>
+            <p class="dept-text">Exploring fundamental sciences to drive real-world innovations.</p>
+          </div>
+          <div class="dept-card reveal reveal-delay-3">
+            <p class="dept-kicker">Dept of ECE</p>
+            <h3 class="dept-title">Electronics &amp; Communication</h3>
+            <p class="dept-text">Building connected worlds through smart electronics and communication.</p>
+          </div>
+          <div class="dept-card reveal reveal-delay-4">
+            <p class="dept-kicker">Dept of MS</p>
+            <h3 class="dept-title">Management Studies</h3>
+            <p class="dept-text">Empowering leaders and organizations for a sustainable and impactful future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave: departments → campus -->
+    <div class="wave-divider" aria-hidden="true" style="background: var(--gray-50);">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:40px;">
+        <path d="M0,0 C480,60 960,0 1440,40 L1440,60 L0,60 Z" fill="var(--navy-900)" />
+      </svg>
+    </div>
+
+    <!-- Campus Image -->
+    <section class="campus-section" id="campus">
+      <img src="assets/iiita.jpeg" alt="IIIT Allahabad Admin Building" class="campus-img" loading="lazy">
+      <div class="campus-overlay">
+        <h2 class="campus-title">Welcome to IIIT Allahabad Campus</h2>
+      </div>
+    </section>
+
+    <!-- Wave: campus → speakers -->
+    <div class="wave-divider" aria-hidden="true" style="background: var(--navy-900);">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:50px;">
+        <path d="M0,0 C360,50 720,0 1080,30 C1260,45 1380,20 1440,0 L1440,60 L0,60 Z" fill="var(--gray-50)" />
+      </svg>
+    </div>
+
+    <!-- Speakers -->
+    <section class="speakers-section" id="speakers" aria-labelledby="speakers-heading">
+      <div class="container">
+        <p class="kicker reveal">Industry Visionaries</p>
+        <h2 id="speakers-heading" class="section-title reveal">Distinguished Speakers &amp; Industry Experts</h2>
+        <p class="section-subtitle reveal">Click on any speaker card to view their complete academic profile &amp; bio
+        </p>
+        <div class="wavy-rule reveal"></div>
+        <div id="speaker-grid" class="speaker-grid"></div>
+      </div>
+    </section>
+
+    <!-- Speaker Bio Modal -->
+    <div class="speaker-bio-panel" id="speaker-bio-panel">
+      <div class="bio-backdrop" id="bio-backdrop"></div>
+      <div class="bio-card">
+        <button class="bio-close" id="bio-close" aria-label="Close bio">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="bio-avatar" id="bio-avatar"></div>
+        <h3 class="bio-name" id="bio-name"></h3>
+        <p class="bio-role" id="bio-role"></p>
+        <p class="bio-company" id="bio-company"></p>
+        <div class="bio-divider"></div>
+        <p class="bio-text" id="bio-text"></p>
       </div>
     </div>
+
+    <!-- Wave: speakers → agenda -->
+    <div class="wave-divider" aria-hidden="true" style="background: var(--gray-50);">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:50px;">
+        <path d="M0,30 Q240,0 480,30 T960,30 T1440,30 L1440,60 L0,60 Z" fill="#ffffff" />
+      </svg>
+    </div>
+
+    <!-- Agenda -->
+    <section class="agenda-section" id="agenda" aria-labelledby="agenda-heading">
+      <div class="container">
+        <p class="kicker reveal">Event Schedule</p>
+        <h2 id="agenda-heading" class="section-title reveal">Two-Day Summit Agenda</h2>
+        <p class="section-subtitle reveal">A packed itinerary of keynotes, panel discussions, startup showcases, and
+          networking sessions</p>
+        <div class="wavy-rule reveal"></div>
+
+        <div class="agenda-tabs reveal" role="tablist">
+          <button class="agenda-tab active" data-day="1" role="tab" aria-selected="true">Day 1 - Sept 19 (Sat)</button>
+          <button class="agenda-tab" data-day="2" role="tab" aria-selected="false">Day 2 - Sept 20 (Sun)</button>
+        </div>
+
+        <div class="agenda-content active" id="agenda-day-1">
+          <div class="agenda-timeline reveal">
+            <div class="agenda-item show">
+              <span class="agenda-time">09:00 AM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Inauguration &amp; Welcome Address</p>
+                <p class="agenda-card-speaker">Director, IIIT Allahabad &amp; Distinguished Guests</p>
+                <span class="agenda-card-tag tag-keynote">Inauguration</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">10:00 AM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Keynote: EV Innovation &amp; Federated Learning</p>
+                <p class="agenda-card-speaker">Mr. Prasanta Sarkar - General Manager, Tata Motors</p>
+                <span class="agenda-card-tag tag-keynote">Keynote</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">11:15 AM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">5G NR: Beamforming, Scheduling &amp; AI/ML for Wireless</p>
+                <p class="agenda-card-speaker">Dr. Manjeer Majumder - Research Engineer, Nokia</p>
+                <span class="agenda-card-tag">Technical Talk</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">12:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Telecom Standardization &amp; Industry Trends</p>
+                <p class="agenda-card-speaker">Mr. Pallab Gupta - Standardization Lead, Nokia</p>
+                <span class="agenda-card-tag">Technical Talk</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">01:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Networking Lunch &amp; Campus Tour</p>
+                <p class="agenda-card-speaker">All Delegates</p>
+                <span class="agenda-card-tag tag-workshop">Networking</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">02:30 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Startup Exhibition - First Floor</p>
+                <p class="agenda-card-speaker">Incubated Startups &amp; Research Prototypes</p>
+                <span class="agenda-card-tag tag-workshop">Exhibition</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">04:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Panel: Patents, IP Strategy &amp; Technology Transfer</p>
+                <p class="agenda-card-speaker">Mr. Uday Tej &amp; Mr. Charan Tej Seeram - Novel Patent Services</p>
+                <span class="agenda-card-tag tag-panel">Panel Discussion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agenda-content" id="agenda-day-2">
+          <div class="agenda-timeline reveal">
+            <div class="agenda-item show">
+              <span class="agenda-time">09:30 AM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Semiconductor Device Modeling &amp; Reliability</p>
+                <p class="agenda-card-speaker">Dr. Syed Rizvi - Staff Engineer, Analog Devices Inc.</p>
+                <span class="agenda-card-tag tag-keynote">Keynote</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">10:45 AM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Vertical Power Architecture for AI Data Centers</p>
+                <p class="agenda-card-speaker">Dr. Rajat Channappanavar - Senior Power Architect, AmberSemi</p>
+                <span class="agenda-card-tag">Technical Talk</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">12:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Student Startup Showcase - Ground Floor</p>
+                <p class="agenda-card-speaker">Student Entrepreneurs &amp; Prototype Teams</p>
+                <span class="agenda-card-tag tag-workshop">Exhibition</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">01:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Lunch &amp; Industry-Student Networking</p>
+                <p class="agenda-card-speaker">All Delegates</p>
+                <span class="agenda-card-tag tag-workshop">Networking</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">02:30 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Panel: Bridging Industry-Academia for Deep-Tech Innovation</p>
+                <p class="agenda-card-speaker">All Speakers &amp; Faculty Panelists</p>
+                <span class="agenda-card-tag tag-panel">Panel Discussion</span>
+              </div>
+            </div>
+            <div class="agenda-item show">
+              <span class="agenda-time">04:00 PM</span>
+              <div class="agenda-card">
+                <p class="agenda-card-title">Valedictory Session &amp; Closing Remarks</p>
+                <p class="agenda-card-speaker">Director, IIIT Allahabad &amp; Chief Guests</p>
+                <span class="agenda-card-tag tag-keynote">Closing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave: agenda → startups -->
+    <div class="wave-divider" aria-hidden="true" style="background: #fff;">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:50px;">
+        <path d="M0,40 C240,0 480,50 720,20 C960,-10 1200,40 1440,10 L1440,60 L0,60 Z" fill="#ffffff" />
+      </svg>
+    </div>
+
+    <!-- Startups -->
+    <section class="startups-section" id="startups" aria-labelledby="startups-heading">
+      <div class="container">
+        <p class="kicker reveal">Innovation &amp; Entrepreneurship</p>
+        <h2 id="startups-heading" class="section-title reveal">Startups &amp; Innovation Showcase</h2>
+        <p class="section-subtitle reveal">Official registry of verified institutional startups, incubated ventures, and
+          research prototypes exhibiting across the Main Auditorium</p>
+        <div class="wavy-rule reveal"></div>
+
+        <div class="venue-block reveal">
+          <div class="venue-bar venue-bar-navy">
+            <span class="dot" style="background:var(--navy-900)" aria-hidden="true"></span>
+            <span class="venue-title">Venue: First Floor (Main Auditorium)</span>
+            <span class="venue-desc">Incubated Startups &amp; Institutional Prototypes</span>
+            <span class="venue-pill" id="count-a"></span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Startup / Prototype Name</th>
+                  <th scope="col">Founder / Representative</th>
+                  <th scope="col">Association with IIIT Allahabad</th>
+                  <th scope="col">Contact Email</th>
+                </tr>
+              </thead>
+              <tbody id="table-a"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="venue-block reveal">
+          <div class="venue-bar venue-bar-gold">
+            <span class="dot gold-dot" aria-hidden="true"></span>
+            <span class="venue-title">Venue: Ground Floor (Main Auditorium)</span>
+            <span class="venue-desc">Student Startups &amp; Prototypes</span>
+            <span class="venue-pill" id="count-b"></span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Project / Startup Name</th>
+                  <th scope="col">Student Representative</th>
+                  <th scope="col">Status / Role</th>
+                  <th scope="col">Institutional Email</th>
+                </tr>
+              </thead>
+              <tbody id="table-b"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Wave: startups → footer -->
+  <div class="wave-divider" aria-hidden="true" style="background: #fff;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+      <path d="M0,20 C360,60 720,0 1080,40 C1260,55 1380,30 1440,20 L1440,80 L0,80 Z" fill="var(--navy-950)" />
+    </svg>
   </div>
 
-  <!-- Departments -->
-  <div class="container">
-    <div class="section-header-row">
-      <div>
-        <h2 class="section-title-sm">Participating Academic Departments</h2>
-        <p class="section-subtitle">Interdisciplinary synergy shaping cutting-edge technology and management excellence</p>
-      </div>
-      <span class="badge-outline">IIITA Academic Divisions</span>
-    </div>
-    <div class="rule"></div>
-    <div class="dept-grid">
-      <div class="dept-card">
-        <p class="dept-kicker">Dept of IT</p>
-        <h3 class="dept-title">Information Technology</h3>
-        <p class="dept-text">Innovating tomorrow through intelligent systems and digital solutions.</p>
-      </div>
-      <div class="dept-card">
-        <p class="dept-kicker">Dept of AS</p>
-        <h3 class="dept-title">Applied Sciences</h3>
-        <p class="dept-text">Exploring fundamental sciences to drive real-world innovations.</p>
-      </div>
-      <div class="dept-card">
-        <p class="dept-kicker">Dept of ECE</p>
-        <h3 class="dept-title">Electronics &amp; Communication</h3>
-        <p class="dept-text">Building connected worlds through smart electronics and communication.</p>
-      </div>
-      <div class="dept-card">
-        <p class="dept-kicker">Dept of MS</p>
-        <h3 class="dept-title">Management Studies</h3>
-        <p class="dept-text">Empowering leaders and organizations for a sustainable and impactful future.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Campus image placeholder -->
-  <div class="container">
-    <div class="image-placeholder">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-      <p class="ph-title">[ Image Placeholder: IIIT Allahabad Main Building / Campus Lawn ]</p>
-      <p class="ph-sub">Devghat, Jhalwa Campus &mdash; 100-Acre State-of-the-Art Academic Infrastructure</p>
-      <!-- Replace this block with: <img src="assets/campus.jpg" alt="IIIT Allahabad campus" style="object-fit:cover;width:100%;height:100%"> -->
-    </div>
-  </div>
-
-  <!-- Speakers -->
-  <section class="speakers-section" aria-labelledby="speakers-heading">
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="container">
-      <p class="kicker">Industry Visionaries</p>
-      <div class="section-header-row">
-        <h2 id="speakers-heading" class="section-title">Distinguished Speakers &amp; Industry Experts</h2>
-        <p class="hover-hint">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.5.4.9 1 .9 1.6V17h6.2v-.7c0-.6.4-1.2.9-1.6A7 7 0 0 0 12 2Z"/></svg>
-          Hover over any speaker card to view complete academic profile &amp; bio
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand-header">
+            <a href="https://www.iiita.ac.in" target="_blank" rel="noopener">
+              <img src="https://www.iiita.ac.in/sites/default/files/logo.png" alt="IIIT Allahabad Logo" class="footer-logo"
+                onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 52 52%22%3E%3Crect width=%2252%22 height=%2252%22 rx=%228%22 fill=%22%230B2240%22/%3E%3Ctext x=%2226%22 y=%2232%22 text-anchor=%22middle%22 fill=%22%23D4A52A%22 font-family=%22sans-serif%22 font-weight=%22bold%22 font-size=%2214%22%3EIIITA%3C/text%3E%3C/svg%3E';">
+            </a>
+            <div>
+              <p class="footer-inst-name">Indian Institute of Information Technology Allahabad</p>
+              <p class="footer-brand-title">Career &amp; Industry Connect 2026</p>
+            </div>
+          </div>
+          <p class="footer-brand-sub">Devghat, Jhalwa, Prayagraj – 211015, Uttar Pradesh, India</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/school/iiitallahabad/" target="_blank" rel="noopener"
+              aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/iiit.allahabad/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <a href="mailto:placement@iiita.ac.in" aria-label="Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="https://www.iiita.ac.in" target="_blank" rel="noopener">IIITA Official Portal</a></li>
+            <li><a href="https://www.iiita.ac.in/training-placement" target="_blank" rel="noopener">Training &amp;
+                Placement</a></li>
+
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#startups">Project / Startup Showcase</a></li>
+            <li><a href="assets/brochure.pdf" download target="_blank" rel="noopener">Download Brochure (PDF)</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-links">
+            <li><a href="mailto:placement@iiita.ac.in">placement@iiita.ac.in</a></li>
+            <li><a href="tel:+915322922025">+91 532-292-2025</a></li>
+            <li><a href="#agenda">Event Agenda</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-quote">&ldquo;Let&rsquo;s collaborate. Let&rsquo;s innovate. Together for a better
+          tomorrow.&rdquo;</p>
+        <p class="footer-copy">&copy; 2026 IIIT Allahabad | Organised by Training &amp; Placement Cell
         </p>
       </div>
-      <div class="rule"></div>
-      <div id="speaker-grid" class="speaker-grid"></div>
     </div>
-  </section>
+  </footer>
 
-  <!-- Startups -->
-  <section class="startups-section" id="startups" aria-labelledby="startups-heading">
-    <div class="container">
-      <p class="kicker">Innovation &amp; Entrepreneurship</p>
-      <h2 id="startups-heading" class="section-title">Startups &amp; Innovation Showcase</h2>
-      <p class="section-subtitle">Official registry of verified institutional startups, incubated ventures, and research prototypes exhibiting across the Main Auditorium</p>
-      <div class="rule"></div>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
 
-      <div class="venue-block">
-        <div class="venue-bar venue-bar-navy">
-          <span class="dot dot-navy" aria-hidden="true"></span>
-          <span class="venue-title">Venue: First Floor (Main Auditorium)</span>
-          <span class="venue-desc">&mdash; Incubated Startups &amp; Institutional Prototypes</span>
-          <span class="venue-pill" id="count-a"></span>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Startup / Prototype Name</th>
-                <th scope="col">Founder / Representative</th>
-                <th scope="col">Association with IIIT Allahabad</th>
-                <th scope="col">Contact Email</th>
-              </tr>
-            </thead>
-            <tbody id="table-a"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="venue-block">
-        <div class="venue-bar venue-bar-gold">
-          <span class="dot dot-gold" aria-hidden="true"></span>
-          <span class="venue-title">Venue: Ground Floor (Main Auditorium)</span>
-          <span class="venue-desc">&mdash; Student Startups &amp; Prototypes</span>
-          <span class="venue-pill" id="count-b"></span>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Project / Startup Name</th>
-                <th scope="col">Student Representative</th>
-                <th scope="col">Status / Role</th>
-                <th scope="col">Institutional Email</th>
-              </tr>
-            </thead>
-            <tbody id="table-b"></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-row1">
-    <span class="footer-item"><span class="dot gold-dot" aria-hidden="true"></span>Industry Experts</span>
-    <span class="footer-item"><span class="dot gold-dot" aria-hidden="true"></span>Meaningful Collaboration</span>
-    <span class="footer-item"><span class="dot gold-dot" aria-hidden="true"></span>Impactful Research</span>
-  </div>
-  <div class="footer-divider"></div>
-  <div class="container footer-row2">
-    <p class="footer-quote">&ldquo;Let&rsquo;s collaborate. Let&rsquo;s innovate. Together for a better tomorrow.&rdquo;</p>
-    <p class="footer-copy">&copy; 2026 Indian Institute of Information Technology Allahabad (IIIT Allahabad). All Rights Reserved.</p>
-    <p class="footer-org">Organised by Training and Placement Cell &amp; Student Career Progression (SCP) Team, IIIT Allahabad.</p>
-  </div>
-</footer>
-
-<!-- Agenda Modal -->
-<div class="agenda-overlay" id="agenda-overlay" hidden>
-  <div class="agenda-modal" role="dialog" aria-modal="true" aria-labelledby="agenda-title" id="agenda-modal">
-    <header class="agenda-head">
-      <p class="agenda-eyebrow">&#9733; Academic &amp; Industry Conclave &#9733;</p>
-      <h2 class="agenda-title" id="agenda-title">AGENDA</h2>
-      <p class="agenda-subtitle">Career &amp; Industry Connect 2026 &bull; IIIT Allahabad</p>
-      <button type="button" class="agenda-close" id="agenda-close-x" aria-label="Close agenda">&times;</button>
-    </header>
-    <div class="agenda-tabs" role="tablist" aria-label="Agenda day">
-      <button type="button" class="agenda-tab" id="tab-day1" role="tab" data-day="day1" aria-selected="true" aria-controls="panel-day1" tabindex="0">
-        <span class="tab-label-full">Day 1: Saturday, 19 Sept 2026</span>
-        <span class="tab-label-short">Day 1 &middot; Sat 19 Sept</span>
-      </button>
-      <button type="button" class="agenda-tab" id="tab-day2" role="tab" data-day="day2" aria-selected="false" aria-controls="panel-day2" tabindex="-1">
-        <span class="tab-label-full">Day 2: Sunday, 20 Sept 2026</span>
-        <span class="tab-label-short">Day 2 &middot; Sun 20 Sept</span>
-      </button>
-    </div>
-    <div class="agenda-body" id="agenda-body">
-      <div class="agenda-panel" id="panel-day1" role="tabpanel" aria-labelledby="tab-day1">
-        <p class="agenda-print-heading">Day 1: Saturday, 19 September 2026</p>
-        <div class="agenda-frame">
-          <div class="agenda-frame-inner">
-            <span class="corner corner-tl" aria-hidden="true"></span>
-            <span class="corner corner-tr" aria-hidden="true"></span>
-            <span class="corner corner-bl" aria-hidden="true"></span>
-            <span class="corner corner-br" aria-hidden="true"></span>
-            <table class="agenda-table">
-              <thead>
-                <tr><th class="time-col" scope="col">Time</th><th scope="col">Program / Session Details</th></tr>
-              </thead>
-              <tbody id="agenda-day1-body"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="agenda-panel" id="panel-day2" role="tabpanel" aria-labelledby="tab-day2" hidden>
-        <p class="agenda-print-heading">Day 2: Sunday, 20 September 2026</p>
-        <div class="agenda-frame">
-          <div class="agenda-frame-inner">
-            <span class="corner corner-tl" aria-hidden="true"></span>
-            <span class="corner corner-tr" aria-hidden="true"></span>
-            <span class="corner corner-bl" aria-hidden="true"></span>
-            <span class="corner corner-br" aria-hidden="true"></span>
-            <table class="agenda-table">
-              <thead>
-                <tr><th class="time-col" scope="col">Time</th><th scope="col">Program / Session Details</th></tr>
-              </thead>
-              <tbody id="agenda-day2-body"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="agenda-foot">
-      <p class="agenda-note">* Official conclave schedule, Subject to minor institutional revisions</p>
-      <div class="agenda-foot-actions">
-        <button type="button" class="agenda-btn-print" id="agenda-print-btn">Print</button>
-        <button type="button" class="agenda-btn-close" id="agenda-close-footer">Close</button>
-      </div>
-    </footer>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
