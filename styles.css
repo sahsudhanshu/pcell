@@ -493,6 +493,8 @@ button {
   background: rgba(11, 29, 51, 0.6);
   border-radius: var(--r-full);
   padding: 7px 20px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 .hero-pill .pill-dot {
@@ -1730,7 +1732,13 @@ td {
   .hero { padding: var(--sp-12) 0 var(--sp-16); }
   .hero-title { font-size: clamp(1.75rem, 6.5vw, 2.25rem); }
   .hero-subtitle { font-size: 0.95rem; }
-  .hero-pill { font-size: 0.675rem; padding: 6px 14px; }
+  .hero-pill {
+    font-size: 0.675rem;
+    padding: 6px 14px;
+    gap: 8px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
 
   .countdown { gap: var(--sp-2); margin-top: var(--sp-6); }
   .countdown-value { font-size: 1.45rem; min-width: 50px; padding: 8px 10px; }
@@ -1784,11 +1792,32 @@ td {
   .countdown-sep { display: none; }
   .countdown { justify-content: center; gap: 6px; }
   .countdown-value { min-width: 54px; font-size: 1.35rem; }
-  .hero-pill { flex-wrap: wrap; justify-content: center; }
+  .hero-pill {
+    font-size: clamp(0.54rem, 2.5vw, 0.65rem);
+    letter-spacing: 0.06em;
+    padding: 5px 12px;
+    gap: 6px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .hero-pill .pill-dot {
+    width: 3px;
+    height: 3px;
+    flex-shrink: 0;
+  }
   .agenda-timeline { padding-left: var(--sp-5); }
   .agenda-timeline::before { left: 6px; }
   .agenda-item::before { left: calc(-20px + 3px); width: 6px; height: 6px; }
   .footer-social { justify-content: center; }
+}
+
+@media (max-width: 360px) {
+  .hero-pill {
+    font-size: 0.52rem;
+    letter-spacing: 0.04em;
+    padding: 4px 8px;
+    gap: 4px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
