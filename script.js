@@ -248,12 +248,27 @@ function initHeaderScroll() {
 function initMobileMenu() {
   const toggle = document.getElementById("menu-toggle");
   const nav = document.getElementById("nav-links");
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
-  // Close on nav link click
+  const backdrop = document.getElementById("nav-backdrop");
+  const iconPath = document.getElementById("menu-icon-path");
+
+  function toggleMenu(forceClose = false) {
+    const shouldOpen = forceClose ? false : !nav.classList.contains("open");
+    nav.classList.toggle("open", shouldOpen);
+    toggle.classList.toggle("open", shouldOpen);
+    toggle.setAttribute("aria-expanded", String(shouldOpen));
+    if (backdrop) backdrop.classList.toggle("open", shouldOpen);
+    if (iconPath) {
+      iconPath.setAttribute("d", shouldOpen ? "M18 6 6 18M6 6l12 12" : "M3 12h18M3 6h18M3 18h18");
+    }
+  }
+
+  toggle.addEventListener("click", () => toggleMenu());
+  if (backdrop) backdrop.addEventListener("click", () => toggleMenu(true));
   nav.querySelectorAll("a").forEach((a) => {
-    a.addEventListener("click", () => nav.classList.remove("open"));
+    a.addEventListener("click", () => toggleMenu(true));
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.classList.contains("open")) toggleMenu(true);
   });
 }
 
