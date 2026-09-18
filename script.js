@@ -67,29 +67,48 @@ const SPEAKERS = [
     gradient: 7,
     image: "https://media.licdn.com/dms/image/v2/D5603AQHilUM_v6Jwxw/profile-displayphoto-scale_200_200/B56ZuSzIcgIcAY-/0/1767694436876?e=1790812800&v=beta&t=ZM80-LyvQTE0-Qt4pan9I3IP8pITH6d0wlR5GJJu43Q",
     bio: "Dr. Rajat Channappanavar completed his Ph.D. from IIT Kanpur specializing in power electronics for data center applications. He is currently working on vertical power architectures and high-density power delivery topologies for hyperscale AI data centers at AmberSemi."
+  },
+  {
+    name: "Ms. Ana Monga",
+    role: "Design Verification Engineer",
+    company: "STMicroelectronics",
+    initials: "AM",
+    gradient: 8,
+    image: "",
+    bio: "Ana Monga is a Design Verification Engineer at STMicroelectronics with 7 years of experience in IP and SoC verification, specializing in verification methodologies for complex semiconductor designs and ensuring quality, reliability, and design robustness."
   }
 ];
 
+
+
+
 // ── Exhibitor Data ──
 const EXHIBITORS_FLOOR1 = [
-  { name: "Rivika Organic Food Pvt Ltd.", rep: "Saddam Husain", badge: "incubated", email: "saddamhusain1994@gmail.com" },
-  { name: "NCode Sutram for Artificial Intelligence Pvt Ltd", rep: "Mr Ashutosh Mishra", badge: "incubated", email: "ncodesutram@gmail.com" },
-  { name: "DEBUGGERS SQUAD INNOVATIONS", rep: "Aditya Kumar Singh", badge: "applied", email: "iitianadityakumarsingh@gmail.com" },
-  { name: "KimUp", rep: "Ranjeet Maurya", badge: "incubated", email: "ranjeet@kimup.in" },
-  { name: "CURELEX HEALTHTECH PRIVATE LIMITED", rep: "Shriyansh Singh", badge: "incubated", email: "contact.curelex@gmail.com" },
-  { name: "Lyfshilp Academy Pvt. Ltd.", rep: "Bhawna Khorwal", repNote: "(Senior Manager)", badge: "incubated", email: "bhawna@lyfshilpacademy.com" },
-  { name: "PulseOne", rep: "Mohd Salman Khan", badge: "incubated", email: "salman@pulseone.in" },
-  { name: "Chip Prototype", rep: "Mr. Vinay Mishra", badge: "mnnit", email: "mishravinay496@gmail.com" },
-  { name: "FPGA Prototype", rep: "Dr. Bharat Bhushan Upadhyay", badge: "rgipt", email: "bbupadhayay@rgipt.ac.in" }
+  { name: "Rivika Organic Food Pvt Ltd.", rep: "Saddam Husain", badge: "incubated", email: "N/A" },
+  { name: "NCode Sutram for Artificial Intelligence Pvt Ltd", rep: "Mr Ashutosh Mishra", badge: "incubated", email: "N/A" },
+  { name: "DEBUGGERS SQUAD INNOVATIONS", rep: "Aditya Kumar Singh", badge: "applied", email: "N/A" },
+  { name: "KimUp", rep: "Ranjeet Maurya", badge: "incubated", email: "N/A" },
+  { name: "CURELEX HEALTHTECH PRIVATE LIMITED", rep: "Shriyansh Singh", badge: "incubated", email: "N/A" },
+  { name: "Lyfshilp Academy Pvt. Ltd.", rep: "Bhawna Khorwal", badge: "incubated", email: "N/A" },
+  { name: "PulseOne", rep: "Mohd Salman Khan", badge: "incubated", email: "N/A" },
+  { name: "Chip Prototype", rep: "Mr. Vinay Mishra", badge: "mnnit", email: "N/A" },
+  { name: "FPGA Prototype", rep: "Dr. Bharat Bhushan Upadhyay", badge: "rgipt", email: "N/A" },
+  { name: "Psych", rep: "Darshan Janardhan Nagre", badge: "student", email: "N/A" },
+  { name: "SwarmPilot", rep: "Arindam Ghosh", badge: "student", email: "N/A" },
+  { name: "Couple Councelling App", rep: "Parvathy Devi R", badge: "student", email: "N/A" },
+  { name: "Phi Launcher", rep: "Aryan Srivastava", badge: "student", email: "N/A" },
+  { name: "With Me", rep: "Subham Thakare", badge: "student", email: "N/A" },
+  { name: "SPIREXA", rep: "Utkarsh Kumar", badge: "student", email: "N/A" },
+  { name: "Aegis ID", rep: "Abdul Azeem Ansari", badge: "student", email: "N/A" },
+  { name: "Autonomous Tracked Vehicle with GPS Navigation", rep: "Khavina Balamurugan", badge: "student", email: "N/A" },
+  { name: "SYNCXYOU", rep: "Soumili Ghosh", badge: "student", email: "N/A" },
+  { name: "hybrid MTJ-CMOS variable gain amplifier (VGA)", rep: "Apsana Khatoon", badge: "student", email: "N/A" },
+  { name: "Broke Buddy", rep: "Adith N Regnati", badge: "student", email: "N/A" },
+  { name: "Agrivardhak", rep: "Shreejita Srivastava, Divyank Srivastava", badge: "student", email: "N/A" },
+  { name: "Matsya AI", rep: "Team: Rafales", badge: "student", email: "N/A" },
+  { name: "Chip Prototype", rep: "VLSI IIITA", badge: "student", email: "N/A" }
 ];
 
-const EXHIBITORS_GROUND = [
-  { name: "SYNCXYOU", rep: "SOUMILI GHOSH", badge: "student", email: "iit2025163@iiita.ac.in" },
-  { name: "With Me", rep: "Subham Thakare", badge: "student", email: "mbe2026001@iiita.ac.in" },
-  { name: "SPIREXA", rep: "Utkarsh Kumar", badge: "student", email: "bdi2026007@iiita.ac.in" },
-  { name: "Aegis ID", rep: "Abdul Azeem Ansari", badge: "student", email: "iit2024243@iiita.ac.in" },
-  { name: "Autonomous Tracked Vehicle with GPS Navigation", rep: "Khavina Balamurugan", badge: "student", email: "iec2025037@iiita.ac.in" }
-];
 
 const BADGE_LABELS = {
   incubated: "Incubated at IIITA",
@@ -174,7 +193,6 @@ function renderTable(tbodyId, data) {
       <td><strong>${row.name}</strong></td>
       <td>${repHtml}</td>
       <td><span class="badge badge-${row.badge}">${BADGE_LABELS[row.badge]}</span></td>
-      <td class="cell-email"><a href="mailto:${row.email}">${row.email}</a></td>
     `;
     tbody.appendChild(tr);
   });
@@ -182,9 +200,9 @@ function renderTable(tbodyId, data) {
 
 function renderExhibitors() {
   renderTable("table-a", EXHIBITORS_FLOOR1);
-  renderTable("table-b", EXHIBITORS_GROUND);
+  
   document.getElementById("count-a").textContent = `${EXHIBITORS_FLOOR1.length} Exhibitors`;
-  document.getElementById("count-b").textContent = `${EXHIBITORS_GROUND.length} Exhibitors`;
+  
 }
 
 // ── Countdown Timer ──
